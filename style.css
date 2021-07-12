@@ -1,9 +1,49 @@
-/* top player style */ 
+/* -------------
+Google font 
+--------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* common styles */
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #F3F1FF;
+}
+hr{
+    border: 1px solid #D1D1D1;
+}
+/* top player style */
+.top-players{
+    margin-bottom: 30px;
+}
+
+.section-title{
+    color: #562EFF;
+    font-size: 24px;
+    padding-top: 3px;
+}
+main{
+    display: flex;
+    justify-content: center ;
+}
+.container{
+    width: 870px;
+    background-color: #fff;
+    padding: 30px;
+}
 .players{
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 29px;
+}
+.player{
+    display: flex;
+    align-items: center;
 }
 .player img{
     width: 56px;
     height: 56px;
+}
+.players-name{
+    margin-left: 16px;
+    font-size: 18px;
 }
