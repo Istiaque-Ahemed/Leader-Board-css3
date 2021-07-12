@@ -23,12 +23,15 @@ hr{
 }
 main{
     display: flex;
-    justify-content: center ;
+    flex-direction: column;
+    align-items:center;
 }
 .container{
     width: 870px;
     background-color: #fff;
     padding: 30px;
+    margin-top: 16px;
+    border-radius: 5px;
 }
 .players{
     display: grid;
@@ -47,3 +50,38 @@ main{
     margin-left: 16px;
     font-size: 18px;
 }
+/*------------- 
+  Blog Styles 
+---------------*/
+.blogs{
+    display:grid;
+    grid-template-columns: repeat(2 ,1fr);
+}
+.blog{
+    display: flex;
+}
+
+.blog .thumbnail img{
+    width: 177px;
+    height: 117px;
+}
+.blog-info{
+    margin-left: 16px;
+}
+.blog-title{
+    font-size: 20px;
+}
+.blog-author{
+    color: #9f9f9f;
+}
+.blog-author a {
+    text-decoration: none;
+    color:#562EFF;
+}
+/* ----------
+Course Styles
+ ------------*/
+.course .course-banner img{
+    width: 224px;
+    height: 104px;
+ }
