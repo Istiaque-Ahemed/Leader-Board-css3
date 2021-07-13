@@ -60,6 +60,7 @@ main{
 }
 .blog{
     display: flex;
+
 }
 
 .blog .thumbnail img{
@@ -82,6 +83,12 @@ main{
 /* ----------
 Course Styles
  ------------*/
+.course{
+    box-shadow:0px 3px 4px grey;
+    height: 300px;
+    padding:3%;
+    border-radius: 5px;
+}
 .courses{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -89,15 +96,16 @@ Course Styles
 }
 
 .course .course-banner img{
-    width: 224px;
-    height: 104px;
+    width: 253px;
+    height: 114px;
  }
  .coures-info{
      display: flex;
      align-items: center;
      justify-content: space-between;
-     width: 75%;
+     width:98%;
  }
+
  .coures-duration{
      color: #FF4A60;
      background-color:#FFE4E8 ;
@@ -121,4 +129,34 @@ Course Styles
 .fa-clock{
      color: #FF4A60;
      
+}
+
+/*============
+
+ Media Qurey 
+
+============*/
+@media only screen  and (max-width:688px){
+    .section-title{
+        margin-left: 3%;
+    }
+
+    .container{
+        width: 100%;
+    }
+    .players, .blogs, .courses{
+        grid-template-columns: repeat( 1,1fr);
+
+    }
+    .blog{
+        margin-left: 3%;
+    }
+
+
+    .player, .blog{
+        flex-direction: column; 
+    }
+    .course{
+        margin: 6%;
+    }
 }
